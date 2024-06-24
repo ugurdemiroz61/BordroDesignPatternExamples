@@ -1,6 +1,7 @@
 package com.uur.bordro.hesaplamalar.maas.memurmaas;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 import com.uur.bordro.hesaplamalar.IHakedis;
 import com.uur.bordro.hesaplamalar.IKesinti;
@@ -32,7 +33,7 @@ public interface IMemurMaasFactory {
 	
 	IHakedis createDengeTazminati();
 	
-	IKesinti createDamgaVergisi(BigDecimal damgeVergisiMatrahi) ;
+	IKesinti createDamgaVergisi(List<IHakedis> hakedisler) ;
 
 	BigDecimal getGunOrani();
 

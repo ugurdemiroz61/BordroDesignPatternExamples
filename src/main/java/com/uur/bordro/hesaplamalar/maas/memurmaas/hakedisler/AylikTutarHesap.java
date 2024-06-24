@@ -43,7 +43,6 @@ public class AylikTutarHesap  implements IHakedis {
 
 	@Override
 	public String getHakedisAdi() {
-		// TODO Auto-generated method stub
 		return "Aylık Tutarı";
 	}
 }

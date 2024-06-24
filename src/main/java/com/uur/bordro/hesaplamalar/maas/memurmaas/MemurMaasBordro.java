@@ -71,8 +71,9 @@ public class MemurMaasBordro extends MaasBordro {
 
 	private void kesintileriHesapla() {
 		super.kesintiler = new ArrayList<IKesinti>();
-		BigDecimal damgaVergisiMatrahi = super.hakedisler.stream().map(x -> x.getDamgaVergisiMatrahi()).reduce(BigDecimal.ZERO, BigDecimal::add);
-		super.kesintiler.add(memurMaasFactory.createDamgaVergisi(damgaVergisiMatrahi));
+		
+		IKesinti damgaVergisi = memurMaasFactory.createDamgaVergisi(super.hakedisler);
+		super.kesintiler.add(damgaVergisi);
 		
 	}
 }

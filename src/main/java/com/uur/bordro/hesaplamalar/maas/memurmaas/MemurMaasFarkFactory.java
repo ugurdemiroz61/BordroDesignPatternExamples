@@ -1,6 +1,7 @@
 package com.uur.bordro.hesaplamalar.maas.memurmaas;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 import com.uur.bordro.hesaplamalar.IHakedis;
 import com.uur.bordro.hesaplamalar.IKesinti;
@@ -100,7 +101,7 @@ public class MemurMaasFarkFactory implements IMemurMaasFactory{
 		return null;
 	}
 	@Override
-	public IKesinti createDamgaVergisi(BigDecimal damgeVergisiMatrahi) {
+	public IKesinti createDamgaVergisi(List<IHakedis> hakedisler) {
 		// TODO Auto-generated method stub
 		return null;
 	}

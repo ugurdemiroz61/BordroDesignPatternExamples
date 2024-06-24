@@ -1,6 +1,7 @@
 package com.uur.bordro.hesaplamalar.maas.memurmaas;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 import com.uur.bordro.hesaplamalar.IHakedis;
 import com.uur.bordro.hesaplamalar.IKesinti;
@@ -115,8 +116,8 @@ public class MemurMaasFactory implements IMemurMaasFactory {
 	}
 
 	@Override
-	public IKesinti createDamgaVergisi(BigDecimal damgeVergisiMatrahi ){
-		return new DamgaVergisiHesap(memurMaasParametreBilgileri, memurMaasGirisBilgileri,damgeVergisiMatrahi);
+	public IKesinti createDamgaVergisi(List<IHakedis> hakedisler){
+		return new DamgaVergisiHesap(memurMaasParametreBilgileri, memurMaasGirisBilgileri,hakedisler);
 	}
 
 	
